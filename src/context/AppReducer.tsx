@@ -1,6 +1,6 @@
 import { transactionType, actionType } from "../Types/Types";
 
-export default (state: transactionType, action: actionType) => {
+const AppReducer = (state: transactionType, action: actionType) => {
   switch (action.type) {
     case "ADD_TRANSACTION":
       return {
@@ -20,3 +20,5 @@ export default (state: transactionType, action: actionType) => {
       return state;
   }
 };
+
+export default AppReducer;

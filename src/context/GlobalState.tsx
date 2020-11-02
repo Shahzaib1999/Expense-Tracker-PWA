@@ -9,9 +9,9 @@ const initialState: transactionType = {
 };
 
 type contextProps = {
-  transactions: transType[];
-  addTransaction: (trans: transType) => void;
-  deleteTransaction: (id: number, amount: number) => void;
+  transactions: transType[]
+  addTransaction: (newTransaction: transType) => void,
+  deleteTransaction: (id: number, amount: number) => void
   balance: number;
 };
 

@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export type transType = {
   id: number;
   description: string;
